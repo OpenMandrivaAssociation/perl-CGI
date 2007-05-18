@@ -1,17 +1,17 @@
 %define real_name	CGI.pm
 %define name		perl-CGI
-%define version		3.16
-%define release		%mkrel 2
+%define version 	3.29
+%define release 	%mkrel 1
 %define epoch		1
 
 Name:           %{name}
 Version:        %{version}
 Release:        %{release}
-Epoch:		%{epoch}
+Epoch:          %{epoch}
 Summary:        Simple Common Gateway Interface class for Perl
 License:        GPL or Artistic
 Group:          Development/Perl
-Source:         http://search.cpan.org/CPAN/authors/id/L/LD/LDS/CGI.pm-%{version}.tar.bz2
+Source:         http://search.cpan.org/CPAN/authors/id/L/LD/LDS/CGI.pm-%{version}.tar.gz
 URL:            http://stein.cshl.org/WWW/software/CGI/
 BuildArch:      noarch
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
