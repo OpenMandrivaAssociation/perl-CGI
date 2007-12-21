@@ -14,6 +14,7 @@ Group:          Development/Perl
 Source:         http://search.cpan.org/CPAN/authors/id/L/LD/LDS/CGI.pm-%{version}.tar.gz
 URL:            http://stein.cshl.org/WWW/software/CGI/
 BuildArch:      noarch
+BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 Requires:       perl >= 0:5.004
 BuildRequires:  perl-devel
 Conflicts:      perl < 0:5.600-28mdk
