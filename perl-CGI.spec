@@ -1,6 +1,6 @@
 %define real_name	CGI.pm
 %define name		perl-CGI
-%define version 	3.29
+%define version 	3.33
 %define release 	%mkrel 1
 %define epoch		1
 
