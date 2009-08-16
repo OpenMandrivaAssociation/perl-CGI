@@ -1,22 +1,21 @@
-%define real_name	CGI.pm
-%define name		perl-CGI
-%define version 	3.43
-%define release 	%mkrel 1
-%define epoch		1
+%define upstream_name	 CGI
+%define upstream_version 3.45
 
-Name:           %{name}
-Version:        %{version}
-Release:        %{release}
-Epoch:          %{epoch}
-Summary:        Simple Common Gateway Interface class for Perl
-License:        GPL or Artistic
-Group:          Development/Perl
-Source:         http://search.cpan.org/CPAN/authors/id/L/LD/LDS/CGI.pm-%{version}.tar.gz
-URL:            http://stein.cshl.org/WWW/software/CGI/
-BuildArch:      noarch
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+Name:       perl-%{upstream_name}
+Version:    %perl_convert_version %{upstream_version}
+Release:    %mkrel 1
+Epoch:      1
+
+Summary:    Simple Common Gateway Interface class for Perl
+License:    GPL+ or Artistic
+Group:      Development/Perl
+Url:        http://stein.cshl.org/WWW/software/CGI/
+Source0:    http://search.cpan.org/CPAN/authors/id/L/LD/LDS/%{upstream_name}.pm-%{upstream_version}.tar.gz
+
+BuildArch:  noarch
+BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+
 Requires:       perl >= 0:5.004
-BuildRequires:  perl-devel
 Conflicts:      perl < 0:5.600-28mdk
 
 %description
@@ -43,7 +42,7 @@ processes, such as loading large modules or opening persistent database
 connections, will see large performance improvements.
 
 %prep
-%setup -q -n %{real_name}-%{version}
+%setup -q -n %{upstream_name}.pm-%{upstream_version}
 perl -pi -e s,/usr/local/bin/perl,/usr/bin/perl, examples/*.{cgi,pl}
 
 %build
@@ -74,5 +73,3 @@ perl -pi -e s,/usr/local/bin/perl,/usr/bin/perl, examples/*.{cgi,pl}
 %defattr(-,root,root)
 %{perl_vendorlib}/CGI/Fast.pm
 %{_mandir}/man3/CGI::Fast.3pm.*
-
-
