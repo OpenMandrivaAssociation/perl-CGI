@@ -12,6 +12,8 @@ Group:      Development/Perl
 Url:        http://stein.cshl.org/WWW/software/CGI/
 Source0:    http://search.cpan.org/CPAN/authors/id/L/LD/LDS/%{upstream_name}.pm-%{upstream_version}.tar.gz
 
+BuildRequires:  perl(FCGI)
+
 BuildArch:  noarch
 BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
 
