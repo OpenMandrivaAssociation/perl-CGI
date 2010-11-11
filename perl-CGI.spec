@@ -1,9 +1,9 @@
 %define upstream_name	 CGI
-%define upstream_version 3.49
+%define upstream_version 3.50
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 Epoch:      1
 
 Summary:    Simple Common Gateway Interface class for Perl
