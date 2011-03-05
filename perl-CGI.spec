@@ -1,5 +1,5 @@
 %define upstream_name	 CGI
-%define upstream_version 3.51
+%define upstream_version 3.52
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
