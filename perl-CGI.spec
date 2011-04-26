@@ -1,5 +1,5 @@
 %define upstream_name	 CGI
-%define upstream_version 3.52
+%define upstream_version 3.53
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -15,7 +15,7 @@ Source0:    http://search.cpan.org/CPAN/authors/id/L/LD/LDS/%{upstream_name}.pm-
 BuildRequires:  perl(FCGI)
 
 BuildArch:  noarch
-BuildRoot:  %{_tmppath}/%{name}-%{version}-%{release}
+
 
 Requires:       perl >= 0:5.004
 Conflicts:      perl < 0:5.600-28mdk
@@ -55,8 +55,6 @@ perl -pi -e s,/usr/local/bin/perl,/usr/bin/perl, examples/*.{cgi,pl}
 %{__make} test
 
 %install
-%{__rm} -rf %{buildroot}
-
 %makeinstall_std
 
 %clean 
