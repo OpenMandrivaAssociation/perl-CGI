@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    4
 Epoch:      1
 
 Summary:    Simple Common Gateway Interface class for Perl
@@ -13,6 +13,7 @@ Url:        http://stein.cshl.org/WWW/software/CGI/
 Source0:    http://search.cpan.org/CPAN/authors/id/L/LD/LDS/%{upstream_name}.pm-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(FCGI)
+BuildRequires:	perl-base >= 2:5.14.2
 
 BuildArch:  noarch
 
