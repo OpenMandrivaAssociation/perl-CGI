@@ -1,16 +1,16 @@
 %define upstream_name	 CGI
-%define upstream_version 3.53
+%define upstream_version 3.63
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    5
+Release:    1
 Epoch:      1
 
 Summary:    Simple Common Gateway Interface class for Perl
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://stein.cshl.org/WWW/software/CGI/
-Source0:    http://search.cpan.org/CPAN/authors/id/L/LD/LDS/%{upstream_name}.pm-%{upstream_version}.tar.gz
+Source0:    http://search.cpan.org/CPAN/authors/id/M/MA/MARKSTOS/%{upstream_name}.pm-%{upstream_version}.tar.gz
 
 BuildRequires:  perl(FCGI)
 BuildRequires:	perl-base >= 2:5.14.2
@@ -69,6 +69,9 @@ perl -pi -e s,/usr/local/bin/perl,/usr/bin/perl, examples/*.{cgi,pl}
 
 
 %changelog
+* Sat Dec 29 2012 Per Øyvind Karlsen <peroyvind@mandriva.org> 3.630.0-1
+- new version
+
 * Sun Jan 22 2012 Per Ã˜yvind Karlsen <peroyvind@mandriva.org> 1:3.530.0-4
 + Revision: 764940
 - make sure to really rebuild against perl-5.14.2
