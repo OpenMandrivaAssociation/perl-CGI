@@ -5,7 +5,7 @@ Summary:	Simple Common Gateway Interface class for Perl
 Name:		perl-%{modname}
 Epoch:		1
 Version:	%{perl_convert_version %{modver}}
-Release:	2
+Release:	3
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://stein.cshl.org/WWW/software/CGI/
