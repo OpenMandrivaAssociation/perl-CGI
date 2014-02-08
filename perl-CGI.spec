@@ -3,7 +3,7 @@
 
 Name:		perl-%{modname}
 Version:	%{perl_convert_version %{modver}}
-Release:	2
+Release:	3
 Epoch:		1
 
 Summary:	Simple Common Gateway Interface class for Perl
