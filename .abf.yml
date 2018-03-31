@@ -1,5 +1,2 @@
-removed_sources:
-  CGI.pm-3.53.tar.gz: 0dd0c1b96d56c03ea4d8b8ce77f6b2adb480bb6a
-  CGI.pm-3.65.tar.gz: ab2347ca288354a8a0930e8c0d2414b97b1c3318
 sources:
-  CGI.pm-4.01.tar.gz: 1fa055f7044c206467f7fe0a70a5496b1b68bc30
+  CGI-4.38.tar.gz: 89c7f4cccc3047154726399e3a261377c85d7d0d

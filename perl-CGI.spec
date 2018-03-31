@@ -1,5 +1,5 @@
 %define upstream_name	 CGI
-%define upstream_version 4.01
+%define upstream_version 4.38
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -10,8 +10,8 @@ Summary:    Simple Common Gateway Interface class for Perl
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://stein.cshl.org/WWW/software/CGI/
-Source0:    http://search.cpan.org/CPAN/authors/id/L/LD/LDS/%{upstream_name}.pm-%{upstream_version}.tar.gz
+Url:        http://search.cpan.org/dist/CGI/
+Source0:    http://search.cpan.org/CPAN/authors/id/L/LE/LEEJO/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Spec) >= 0.820.0
@@ -30,7 +30,7 @@ are taken from the current query (thereby preserving state
 information).
 
 %prep
-%setup -q -n %{upstream_name}.pm-%{upstream_version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 perl -pi -e s,/usr/local/bin/perl,/usr/bin/perl, examples/*.{cgi,pl}
 chmod 755 examples
 
@@ -45,8 +45,8 @@ perl Makefile.PL INSTALLDIRS=vendor
 %makeinstall_std
 
 %files
-%doc Changes META.json META.yml MYMETA.yml README examples
+%doc Changes META.json META.yml MYMETA.yml examples
 %{perl_vendorlib}/CGI
 %{perl_vendorlib}/*.pm
+%{perl_vendorlib}/*.pod
 %{_mandir}/man3/*
-
