@@ -48,7 +48,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 %makeinstall_std
 
 %files
-%doc Changes META.json META.yml MYMETA.yml examples
+%doc Changes META.json META.yml examples
 %{perl_vendorlib}/CGI
 %{perl_vendorlib}/*.pm
 %{perl_vendorlib}/*.pod
