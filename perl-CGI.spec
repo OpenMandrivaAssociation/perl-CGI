@@ -1,5 +1,5 @@
 %define upstream_name	 CGI
-%define upstream_version 4.38
+%define upstream_version 4.40
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
@@ -14,6 +14,7 @@ Url:        http://search.cpan.org/dist/CGI/
 Source0:    http://search.cpan.org/CPAN/authors/id/L/LE/LEEJO/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Test::Deep)
+BuildRequires: perl(Test::Warn)
 BuildRequires: perl(HTML::Entities)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Spec) >= 0.820.0
