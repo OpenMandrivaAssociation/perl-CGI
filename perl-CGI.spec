@@ -3,14 +3,14 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    7
+Release:    8
 Epoch:      1
 
 Summary:    Simple Common Gateway Interface class for Perl
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://search.cpan.org/dist/CGI/
+Url:        http://metacpan.org/pod/CGI
 Source0:    http://search.cpan.org/CPAN/authors/id/L/LE/LEEJO/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Test::Deep)
