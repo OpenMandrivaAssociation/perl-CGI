@@ -1,4 +1,2 @@
-removed_sources:
-  CGI-4.38.tar.gz: 89c7f4cccc3047154726399e3a261377c85d7d0d
 sources:
-  CGI-4.40.tar.gz: cbbd078f6e8d7dfcc5821e9c56e0212e0c0731a8
+  CGI-4.44.tar.gz: 5ec34c8cb99eb9aaab413e3efac670a13a5cdf29
