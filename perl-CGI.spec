@@ -1,9 +1,9 @@
 %define upstream_name	 CGI
-%define upstream_version 4.40
+%define upstream_version 4.44
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    8
+Release:    1
 Epoch:      1
 
 Summary:    Simple Common Gateway Interface class for Perl
@@ -39,13 +39,10 @@ chmod 755 examples
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
-%make
-
-%check
-%make test
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files
 %doc Changes META.json META.yml examples
