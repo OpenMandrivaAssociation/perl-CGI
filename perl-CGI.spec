@@ -10,7 +10,7 @@ Summary:    Simple Common Gateway Interface class for Perl
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        http://metacpan.org/pod/CGI
+Url:        https://metacpan.org/pod/CGI
 Source0:    http://search.cpan.org/CPAN/authors/id/L/LE/LEEJO/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires: perl(Test::Deep)
