@@ -1,24 +1,22 @@
 %define upstream_name	 CGI
-%define upstream_version 4.54
 
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    3
-Epoch:      1
+Version:    4.66
+Release:    1
 
 Summary:    Simple Common Gateway Interface class for Perl
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        https://metacpan.org/pod/CGI
-Source0:    http://search.cpan.org/CPAN/authors/id/L/LE/LEEJO/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:    http://search.cpan.org/CPAN/authors/id/L/LE/LEEJO/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires: perl(Test::Deep)
 BuildRequires: perl(Test::Warn)
 BuildRequires: perl(HTML::Entities)
 BuildRequires: perl(ExtUtils::MakeMaker)
-BuildRequires: perl(File::Spec) >= 0.820.0
-BuildRequires: perl(Test::More) >= 0.980.0
+BuildRequires: perl(File::Spec)
+BuildRequires: perl(Test::More)
 BuildRequires: perl-devel
 BuildArch:  noarch
 
@@ -33,7 +31,7 @@ are taken from the current query (thereby preserving state
 information).
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 perl -pi -e s,/usr/local/bin/perl,/usr/bin/perl, examples/*.{cgi,pl}
 chmod 755 examples
 
