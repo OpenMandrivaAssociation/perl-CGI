@@ -11,6 +11,7 @@ Group:      Development/Perl
 Url:        https://metacpan.org/pod/CGI
 Source0:    http://search.cpan.org/CPAN/authors/id/L/LE/LEEJO/%{upstream_name}-%{version}.tar.gz
 
+BuildRequires:	make
 BuildRequires: perl(Test::Deep)
 BuildRequires: perl(Test::Warn)
 BuildRequires: perl(HTML::Entities)
