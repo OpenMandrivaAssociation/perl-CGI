@@ -1,7 +1,7 @@
 %define upstream_name	 CGI
 
 Name:       perl-%{upstream_name}
-Version:    4.66
+Version:    4.72
 Release:    1
 
 Summary:    Simple Common Gateway Interface class for Perl
